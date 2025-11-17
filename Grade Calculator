@@ -1,0 +1,50 @@
+# Student Grade Calculator in Python
+
+# Input marks for 5 subjects
+print("***_NOIDA INTERNATIONAL UNIVERSITY(NIU)_***")
+print(" ")
+input("Branch Name: ")
+print(" ")
+input("Session: ")
+print(" ")
+input("ENTER THE NAME: ")
+print(" ")
+int(input("NIU_No: "))
+print(" ")
+
+# marks
+
+marks = []
+for i in range(5):
+    mark = float(input(f"Enter marks for subject {i+1}: "))
+    marks.append(mark)
+
+# Calculate average
+average = sum(marks) / len(marks)
+
+# Determine grade
+if average >= 90:
+    grade = 'A'
+elif average >= 80:
+    grade = 'B'
+elif average >= 70:
+    grade = 'C'
+elif average >= 60:
+    grade = 'D'
+else:
+    grade = 'F'
+
+# Display results
+print(f"Average Marks: {average}")
+print(f"Grade: {grade}")
+
+print(" ")
+
+# greating
+
+if grade == 'F':
+    print("oops! you need to work hard")
+elif grade =='C' or grade=='D':
+    print("need to work hard")
+else:
+    print("well done")
